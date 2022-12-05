@@ -7,7 +7,7 @@ import Trx from './components/Trx/Trx';
 
 function App() {
   return (
-    <div className='bg-[#101422] w-full h-full pb-20'>
+    <div className='bg-[#101422] w-full h-screen'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />

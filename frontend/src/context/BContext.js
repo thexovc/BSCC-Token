@@ -75,7 +75,9 @@ export const BProvider = ({ children }) => {
           });
 
           // return true if network id is the same
-
+          if (currentChainId != "97") {
+            alert("Switch To Mumbai Testnet")
+          }
         }
 
       } else {
