@@ -49,7 +49,6 @@ const Main = () => {
         }
     }
 
-
     return (
         <div className='mt-20 flex bg-[#101422] flex-col justify-center items-center md:w-full  w-full text-[#bdb8fa]'>
             <div className='bg-[#0C111D] md:w-6/12  w-11/12 p-8 rounded-2xl'>
