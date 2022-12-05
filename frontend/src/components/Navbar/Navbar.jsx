@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import logo from '../../assets/svg/logo.svg'
-import { FaEthereum } from 'react-icons/fa'
+import { SiBinance } from 'react-icons/si'
 import bnb from '../../assets/images/bnb.png'
 import { BContext } from '../../context/BContext'
 
@@ -8,7 +8,7 @@ const Navbar = () => {
     const { connectWallet, currentAccount } = useContext(BContext)
 
     return (
-        <nav className='md:w-full w-screen flex text-white p-4 justify-between'>
+        <nav className='md:w-full w-full flex text-white p-4 justify-between'>
             <div className="flex items-center md:w-4/12 ">
                 <ul className='flex justify-between w-full px-4 text-xl items-center'>
                     <a>
@@ -20,15 +20,15 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className='w-4/12 px-2 hidden md:flex'>
+            <div className='md:w-4/12 px-2 hidden md:flex'>
                 <input className='w-full p-4 text-xl bg-gray-700 bg-transparent rounded-lg border-gray-300 border-2' placeholder='Search Tokens and NFTs Collections ' />
             </div>
 
-            <div className='md:w-3/12 text-sm  md:text-xl flex items-center gap-20 px-4'>
+            <div className='md:w-4/12 text-sm  md:text-xl flex items-center gap-20 px-4'>
 
                 <p className='hidden md:flex md:items-center md:gap-1'>
-                    <span className='p-1 bg-[#637FEA]  rounded-full'>
-                        <FaEthereum />
+                    <span className='p-1 bg-orange-700  rounded-full'>
+                        <SiBinance />
                     </span>
                     <span>BNB</span>
 

@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { FiSettings } from 'react-icons/fi'
 import { BContext } from '../../context/BContext';
 import { ethers } from 'ethers';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Main = () => {
     const navigate = useNavigate();
@@ -51,7 +51,7 @@ const Main = () => {
 
 
     return (
-        <div className='mt-20 flex justify-center md:w-full w-screen text-[#bdb8fa]'>
+        <div className='mt-20 flex flex-col justify-center items-center md:w-full w-full text-[#bdb8fa]'>
             <div className='bg-[#0C111D] md:w-6/12  w-11/12 p-8 rounded-2xl'>
                 <div className='flex w-full justify-between font-semibold'>
                     <p className='text-xl'>Mint BSCC Token</p>
@@ -78,8 +78,8 @@ const Main = () => {
                     </div> */}
                     <div className="flex -mt-4 justify-between px-4 py-8 text-2xl bg-[#131A2A] rounded-xl">
                         <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} className='bg-transparent w-2/3 p-2' placeholder='0' />
-                        <p className='bg-[#4D83FB] md:text-xl w-1/3 mx-4 p-4 justify-center font-semibold text-white rounded-2xl  flex'>
-                            <span className='text-xl text-center'> BSCC</span>
+                        <p className='bg-[#4D83FB] md:text-xl  md:w-1/3 mx-4 p-4 justify-center font-semibold text-white rounded-2xl  flex'>
+                            <span className='md:text-xl text-sm text-center'> BSCC</span>
                         </p>
                     </div>
                 </div>
@@ -89,6 +89,10 @@ const Main = () => {
                         {loading ? "Loading ..." : "Mint"}
                     </p>
                 </div>
+            </div>
+
+            <div className='mt-10 flex justify-center'>
+                <Link to='/trx' className='text-blue-300 text-lg underline cursor-pointer'>View Your Transactions</Link>
             </div>
         </div>
     )

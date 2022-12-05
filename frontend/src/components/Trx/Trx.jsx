@@ -38,7 +38,7 @@ const Trx = () => {
         setTimeout(() => {
             updateUIValues()
         }, 1000);
-    }, [currentAccount])
+    })
 
 
     return (

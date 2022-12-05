@@ -50,7 +50,7 @@ export const BProvider = ({ children }) => {
 
   const connectWallet = async () => {
     if (!window.ethereum) {
-      alert("Please Install MetaMask")
+      alert("Please Make Sure You Have Web3 Enabled")
       return
     }
     try {
@@ -69,7 +69,7 @@ export const BProvider = ({ children }) => {
           });
 
           // return true if network id is the same
-          if (currentChainId != "80001") {
+          if (currentChainId != "97") {
             alert("Switch To Mumbai Testnet")
           }
         }
