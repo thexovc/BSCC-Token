@@ -56,6 +56,12 @@ export const BProvider = ({ children }) => {
     try {
       setAppStatus('loading')
 
+      await window.ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        // params: [{ chainId: "0x1" }]
+        params: [{ chainId: ethers.utils.hexlify(97) }]
+      });
+
       const addressArray = await window.ethereum.request({
         method: 'eth_requestAccounts',
       })
@@ -69,9 +75,7 @@ export const BProvider = ({ children }) => {
           });
 
           // return true if network id is the same
-          if (currentChainId != "97") {
-            alert("Switch To Mumbai Testnet")
-          }
+
         }
 
       } else {
