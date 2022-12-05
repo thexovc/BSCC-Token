@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className='md:w-full w-full flex text-white p-4 justify-between'>
             <div className="flex items-center md:w-4/12 ">
                 <ul className='flex justify-between w-full px-4 text-xl items-center'>
-                    <a>
+                    <a href='/'>
                         <li className='border-4 border-green-400 rounded-full'>
                             <img src={bnb} className='w-[60px] h-[60px] border-4 border-white rounded-full ' alt="" />
                         </li>

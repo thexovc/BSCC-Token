@@ -51,7 +51,7 @@ const Main = () => {
 
 
     return (
-        <div className='mt-20 flex bg-[#101422] flex-col justify-center items-center md:w-full h-full w-full text-[#bdb8fa]'>
+        <div className='mt-20 flex bg-[#101422] flex-col justify-center items-center md:w-full  w-full text-[#bdb8fa]'>
             <div className='bg-[#0C111D] md:w-6/12  w-11/12 p-8 rounded-2xl'>
                 <div className='flex w-full justify-between font-semibold'>
                     <p className='text-xl'>Mint BSCC Token</p>
@@ -91,7 +91,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className='mt-10 flex justify-center'>
+            <div className='mt-10 flex justify-center bg-[#101422]'>
                 <Link to='/trx' className='text-blue-300 text-lg underline cursor-pointer'>View Your Transactions</Link>
             </div>
         </div>
