@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Navbar {
+    background: #020410;
+}
+
+.nav-btn > button {
+    border-radius: 5px;
+    background: #D9D9D9;
+    font-weight: 500;
+    font-family: 'B612 Mono', monospace;   
+}
+
+.profile-btn > button {
+    background: #afaeae;
+    font-weight: 500;
+    font-family: 'B612 Mono', monospace;   
+}
+
+.search-bar > .grp {
+    position: relative;
+}
+
+.grp > img {
+    height: 1.35em;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0 , -50%);
+    cursor: pointer;
+}
+
+.grp > text{
+    display: block;
+    padding: 14px 54px 14px 50px; 
+    width: 100%;
+    border: 8px solid;
+    border-image-source: linear-gradient(180deg, #9A37E7 0%, #FF5093 100%);
+    /* border-image-source: linear-gradient(to left, #9A37E7, #FF5093); */
+    border-width: 4px;
+    border-image-slice: 1;
+    border-radius: 10px;
+    background: black;
+    outline: none;
+    font-family: 'B612 Mono', monospace;  
+    color: #868893; 
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.grp > input{
+    display: block;
+    padding: 14px 54px 14px 50px; 
+    width: 100%;
+    border: 5px solid;
+    border-image-source: linear-gradient(180deg, #9A37E7 0%, #FF5093 100%);
+    /* border-image-source: linear-gradient(to left, #9A37E7, #FF5093); */
+    border-width: 2px;
+    border-image-slice: 1;
+    border-radius: 10px;
+    background: black;
+    outline: none;
+    font-family: 'B612 Mono', monospace;  
+    color: #868893; 
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.search {
+    position: relative;
+}
+
+.page-description > h1 {
+font-family: 'Maven Pro';
+font-style: normal;
+font-weight: 900;
+font-size: 74px;
+line-height: 87px;
+width: 741px;
+text-align: center;
+background: radial-gradient(87.92% 372.22% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 79.16%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+/* text-fill-color: transparent; */
+}
+
+.feature-header p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    font-family: 'B612 Mono', monospace;      
+}
+
+.feature-section {
+    background:  #020410;
+}
+
+.feature-header > h1 {
+    font-family: 'Maven Pro';
+    width: 519px;
+    font-weight: 900;
+    line-height: 42px;
+    background: radial-gradient(60.4% 2305.93% at 22.25% 62.5%, #9A37E7 0%, #FF5093 29.92%, #9A37E7 69.61%, #FF5093 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.image-caption {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.discovery-header {
+    background: #020410;
+}
+
+.discovery-header > h1 {
+    /* width: 519px; */
+    /* height: 42px; */
+
+    font-family: 'Maven Pro';
+    font-style: normal;
+    /* font-weight: 900; */
+    /* font-size: 36px; */
+    line-height: 42px;
+    /* text-align: center; */
+
+    background: radial-gradient(60.4% 2305.93% at 22.25% 62.5%, #9A37E7 0%, #adff50 29.92%, #9A37E7 69.61%, #FF5093 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.result-section {
+    background: #D9D9D9;
+}
+
+.about-content {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.footer > h1 {
+    font-family: 'Tourney', cursive;
+}
+
+.result-section, h1, p {
+    font-family: 'B612 Mono', monospace; 
+}
+
+.modal {
+    background: #D9D9D9;
+}
